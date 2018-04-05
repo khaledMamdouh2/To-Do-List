@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Notes</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<table>
+			<tr>
+				<td><span >Your Note: </span></td>
+				<td><textarea rows="2" cols="30" maxlength="25" id="myNote" placeholder="what do u need to do? "></textarea></td>
+			</tr>
+			<tr>
+				<td>Note Color: </td><td><input type="color" id="noteColor"></td><td>Text Color: </td><td><input type="color" id="textColor" /></td>
+			</tr>
+		</table>
+		<div><button id="add-btn" onclick="add()">add item</button></div>
+		<div id="notes"></div>
+		<img src="recycle.png" ondragover="allowDrop(event)" ondrop="drop(event)">
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
